@@ -1,0 +1,370 @@
+% https://www.productplan.com/glossary/moscow-prioritization/
+
+\chapter{Requirements}
+
+% Indtroduktion til kravsspecifikation
+Detection robots should be developed to assist in demining in the best possible way, and it is advisable to specify the system and the mechanics of the robot to produce a testable prototype. With this in mind, the project group has derived requirements for the mobile-robot. The requirement specifications are based on the knowledge gained in the problem analysis. These sections imply what detection robots should be able to do, as well as the legislation which must be followed during the design of the robot. These requirements must be met for the robot to effectively work as a detection robot. Likewise, our must- and should-have requirements have been founded on our knowledge of existing robots and literature\\
+
+        \vspace{2mm}
+
+The following requirements are set by the MoSCoW method for requirements specification followed by a suitable test method for the given requirement.
+
+\begin{itemize}[label={}]
+\setlength{\itemsep}{0.05\baselineskip}
+    \item \framebox[\mylen][c]{\large{\textbf{M}}} \normalsize Must Have: \hspace{5mm} Non-negotiable requirements that is mandatory for the project group \par
+    \item \framebox[\mylen][c]{\large{\textbf{S}}} \normalsize Should Have: \hspace{1.8mm} Important requirements that are not vital, but add significant value \par
+    \item \framebox[\mylen][c]{\large{\textbf{C}}} \normalsize Could Have: \hspace{3.5mm} Nice to have requirements that will have a small impact if left out \par
+    \item \framebox[\mylen][c]{\Large{\textbf{W}}} \normalsize Will Not Have: Requirements that are not a priority for this specific time frame \par
+\end{itemize}
+
+\vspace{4mm}
+
+\iffalse
+\begin{enumerate}
+    \item Move from A-B 
+    
+    \vspace{-6mm}
+    
+    \item Moving in terrain
+    
+    \vspace{-6mm}
+    
+    \item SLAM (Simultaneous Localization And Mapping)
+    
+    \vspace{-6mm}
+    
+    \item Avoid triggering landmines, driving off a cliff or hitting objects
+    
+    \vspace{-6mm}
+    
+    \item Search for metal
+    
+    \vspace{-6mm}
+
+    \item Enough power for hardware (battery/power source)
+    
+    \vspace{-6mm}    
+    
+    \item Reusable (battery/fuel)
+    
+    \vspace{-6mm}
+    
+    \item Can be refueled and or recharged
+    
+    \vspace{-6mm}
+    
+    \item Mark landmines location in a physical world
+    
+    \vspace{-6mm}
+    
+    \item Mark landmines location in a virtual map
+    
+    \vspace{-6mm}
+    
+    \item Resistant to environment
+    
+    \vspace{-6mm}
+    
+    \item Battery time
+    
+    \vspace{-6mm}
+    
+    \item Battery time
+    
+    \vspace{-6mm}
+    
+    \item Moveable sensors
+    
+\end{enumerate}
+\fi
+
+\newpage
+
+\section{Must Have}
+
+\subsection{Move from A-B}\label{R1}
+The robot should be able to move from A to B.
+
+\subsubsection*{Testing Strategy}
+This will be tested by having the robot move from one point to another.
+
+%%%%%%
+
+\subsection{Moving in Terrain}\label{R2}
+More than just moving, it should be able to do so in difficult terrain; move up and down hills, over soft ground, through tall grass and smaller branches.
+
+\subsubsection*{Testing Strategy}
+This will be tested by having the robot move around in various terrain. the terrain it will be tested in will be as follows. loose sand, mountain areas. lightly vegetated terrain and tall grass.
+
+%%%%%%
+
+\subsection{SLAM (Simultaneous Localization And Mapping)}\label{R3}
+Find its own location, map its movement, make a route that covers the entire area while avoiding obstacles by adapting the route.
+
+\subsubsection*{Testing Strategy}
+Place the robot within an area and let it “search”, then see if it gets stuck or leaves out areas. if it does then it is a fail.
+
+%%%%%%
+
+\subsection{Avoid triggering landmines, driving off a cliff or hitting objects}\label{R4}
+Use sensor data to locate obstacles such as trees, stones, cliffs and other non-passable areas along the route as well as tripwire.
+
+\subsubsection*{Testing Strategy}
+Set up different obstacles with the search area and let it search the area, if it collides with any of them then it is a fail.
+
+%%%%%%
+
+\subsection{Search for metal}\label{R5}\todo[]{find bedre formulering - Ikke nødvendig at det skal være metal detektor fordi at den praktiske robots bare representerer input.}
+Search the area in and above for metal. 
+
+\subsubsection*{Testing Strategy}
+Place metal below and above the ground and see if it can find it. if it does not find all then it is a fail.
+
+%%%%%%
+ 
+\subsection{Enough power for hardware (battery/power source)}\label{R6}
+Have a power source.
+
+\subsubsection*{Testing Strategy}
+See if it can turn on and use all functions if not then it is a fail.
+
+%%%%%%
+
+\subsection{Reusable (battery/fuel)}\label{R7}
+Can be refueled and or recharged.
+
+\subsubsection*{Testing Strategy}
+Refill/recharge the machine with the chosen source of power.
+
+%%%%%%
+
+\subsection{Can be refueled and or recharged}\label{R8}
+Have a power source.
+
+\subsubsection*{Testing Strategy}
+Refill/recharge the machine with the chosen source of power.
+
+%%%%%%
+
+\subsection{Mark landmines location in a physical world}\label{R9}
+Be able to mark locations of the objects it is searching for in a physical world.
+
+\subsubsection*{Testing Strategy}
+Have the machine locate and object in its intended terrain and use the chosen marking method on the object's location.
+
+%%%%%%
+
+\subsection{Mark landmines in a virtual map}\label{R10}
+Be able to mark locations of the objects it is searching for in a virtual map.
+
+\subsubsection*{Testing Strategy}
+Have the machine locate and object in its intended terrain and use the chosen marking method in the virtual map.
+
+
+%%%%%%
+
+\newpage
+
+\subsection{Resistant to environment}\label{R11}
+It must be able to function in the Afghan climate. This is to say, be able to handle the local temperatures and other natural hazards such as sand and rain.
+
+\subsubsection*{Testing Strategy}
+Can be tested by having it run in temperatures that range from the chosen location’s minimum temperature to its maximum temperature. preferably at both lower and higher temperatures than necessary. have it run while sand is being poured on it and have it run while water is being poured on it.
+
+
+%%%%%%%%%%%%%%%%%%%%%
+% SHOULD HAVE SECTION
+
+\section{Should Have}
+
+\subsection{Battery time}\label{R12}
+The robot should have a power source that enables it to operate it's intended tasks for XX hours.
+
+\subsubsection*{Testing Strategy}
+Calculation of the robots battery time followed by a series of runtime tests to conclude the calculations
+
+%%%%%%%%%%%%%%%%%%%%
+% COULD HAVE SECTION
+
+\section{Could Have}
+
+\subsection{Moveable sensors}\label{R13}
+The robot can move the sensors to more precisely pinpoint landmine locations in the ground
+
+\subsubsection*{Testing Strategy}
+
+\section{Will Not Have}
+
+This section will be taken into use in the practical requirements (chapter \ref{prac_req})
+
+
+\newpage
+
+
+\section{Safety of Machinery}
+When designing a robot, standardization/legislation can not be disregarded as a focus point, thus the robot should be designed in correlation to the following standards for security measures and international (ISO) standardisation of robotics.
+
+\vspace{2mm}
+
+To accommodate the Machine Directive 2006/42/EC, which is required for the robot to be CE marked, the robots should be designed with the following standards in mind
+
+\begin{itemize}
+\setlength{\itemsep}{0.05\baselineskip}
+\item \textbf{Emergency stop}\\
+The robot should have an emergency stop as a security measure, if unintended behaviour appears in correlation to DS/EN ISO 13850:2015
+
+\item \textbf{Safety-related parts of control systems}
+\begin{itemize}
+\setlength{\itemsep}{0.05\baselineskip}
+\item Principles of design DS/EN ISO 13849-1:2015
+\item Validation DS/EN ISO 13849-2:2014
+\end{itemize}
+
+\item \textbf{Requirements for wireless control systems of machinery}\\
+The robot are to be designed in correlation with DS/EN 62745:2017, which describes communication between portable operator control stations and the robot
+
+\item \textbf{Degrees of protection provided by enclosures}\\
+The robot should be designed with a rating of IP-64
+In correlation to DS/EN 60529+A1:2002
+
+\item \textbf{Coordinate and motion nomenclatures}\\
+Movement in an coordinate system based map should be standardized\\
+in correlation to DS/ISO 9787
+
+\item \textbf{Collaborative robots (Collision detection)}\\
+The robot should be tested in regard to the limiting values of collision detection described in DS/ISO/TS 15066
+
+\item \textbf{Risk assessment}\\
+A risk assessment should be performed to ensure a decrease of potential security risks in regards to DS/EN ISO 12100:2011
+\end{itemize}
+
+\newpage
+
+\chapter{Practical requirements}\label{prac_req}
+
+Within the time frame of this project the project group plan to have the Turtlebot 2e act as proof of concept as stated in the delimited problem statement (Section \ref{delimit_statement}), thus all of the requirements are not able to be met and must be delimited in regard for the problem statement. Therefore a list of practical requirements is listed in the following section, which takes this into account. Test methods will be as stated in the requirements chapter.
+
+\vspace{-3mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% MUST HAVE SECTION
+\vspace{-1mm}
+
+\section*{Must Have}
+\begin{itemize}
+
+    \vspace{-3.5mm}
+
+\item Moving (section \ref{R1})
+
+    \vspace{-3.5mm}
+
+\item SLAM (Simultaneous Localization And Mapping) (section \ref{R3})
+
+    \vspace{-3.5mm}
+
+\item Avoid triggering landmines, driving off a cliff or hitting objects (section \ref{R4})
+
+    \vspace{-3.5mm}
+
+\item Search for metal  (section \ref{R5})
+
+    \vspace{-3.5mm}
+
+\item Enough power for hardware (battery/power source)  (section \ref{R6})
+
+    \vspace{-3.5mm}
+
+\item Reusable (battery/fuel)  (section \ref{R7})
+
+    \vspace{-3.5mm}
+
+\item Can be refueled and or recharged  (section \ref{R8})
+
+    \vspace{-3.5mm}
+
+\item Mark landmines location in a physical world  (section \ref{R9})
+
+    \vspace{-3.5mm}
+
+\item Mark landmines location in a virtual map  (section \ref{R10})
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% SHOULD HAVE SECTION
+\vspace{-2mm}
+
+\section*{Should Have}
+\begin{itemize}
+
+    \vspace{-3.5mm}
+
+\item Battery time  (section \ref{R12})
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%
+% COULD HAVE SECTION
+\vspace{-2mm}
+
+\section*{Could Have}
+
+    \vspace{-3.5mm}
+    
+Not significant for this requirement section
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% WILL NOT HAVE SECTION
+\vspace{-2mm}
+
+\section*{Will Not Have}
+\begin{itemize}
+
+    \vspace{-3.5mm}
+
+\item Moving in terrain (section \ref{R2})
+
+    \vspace{-3.5mm}
+
+\item Resistant to environment  (section \ref{R11})
+
+    \vspace{-3.5mm}
+
+\item Moveable sensors (section \ref{R13})
+\end{itemize}
+
+
+
+
+
+     
+    
+    
+     
+    
+     
+    
+     
+    
+     
+    
+     
+    
+     
+    
+     
+    
+     
+    
+     
+    
+     
+    
+    
+     
+
+
+
+
+
+
