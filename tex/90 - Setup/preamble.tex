@@ -83,7 +83,8 @@
 
 % ------ Style for kapitlers sidehoved ------
 \usepackage{titlesec} % Til brugerdefinerede sidehoved
-\titleformat{\chapter}{\fontsize{35pt}{35pt}\bfseries\color{black}}{{\color{chapterNumColor}\thechapter}}{15pt}{} % sætter fonttypen, skriftstørrelsen og farven på kapitel
+\titleformat{\chapter}{\fontsize{25pt}{25pt}\bfseries\color{black}}{{\color{chapterNumColor}\thechapter}}{15pt}{} % sætter fonttypen, skriftstørrelsen og farven på kapitel
+\titlespacing*{\chapter}{0pt}{-50pt}{40pt} %Kapitelhøjde
 \titleformat{\part}{\fontsize{40pt}{45pt}\bfseries\centering\color{black}}{{\color{chapterNumColor}\thepart}}{15pt}{}[\thispagestyle{empty}\addtocounter{page}{-1}] % sætter fonttypen, skriftstørrelsen og farven på parts
 
 % ------ Selvlavede kommandoer til citater ------
@@ -155,3 +156,5 @@
 % \setlength\extrarowheight{0pt}
 % \setlength{\arrayrulewidth}{0.3mm}
 \renewcommand{\arraystretch}{1.5}
+
+
