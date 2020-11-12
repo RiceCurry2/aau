@@ -1,14 +1,51 @@
+\chapter{Requirements}
+
+Detection robots should be developed to assist in demining in the best possible way, and it is advisable to specify the system and the mechanics of the robot to produce a testable prototype. With this in mind, the project group has derived requirements for the mobile-robot. The requirement specifications are based on the knowledge gained in the problem analysis. These sections imply what detection robots should be able to do, as well as the legislation Section(\ref{safety_of_machinery}) which must be followed during the design of the robot. These requirements must be met for the robot to effectively work as a detection robot.
+
+\vspace{4mm}
+
+\section{Safety of Machinery}\label{safety_of_machinery}
+When designing a robot, standardization/legislation can not be disregarded as a focus point, thus the robot should be designed in correlation to the following standards for security measures and international (ISO) standardization of robotics.
+
+\vspace{1mm}
+
+To accommodate the Machine Directive 2006/42/EC, which is required for the robot to be CE marked, the robots should be designed with the following standards in mind
+
+\begin{itemize}
+\setlength{\itemsep}{0.05\baselineskip}
+\item \textbf{Emergency stop}\\
+The robot should have an emergency stop as a security measure, if unintended behavior appears in correlation to DS/EN ISO 13850:2015
+
+\item \textbf{Safety-related parts of control systems}\\
+Principles of design DS/EN ISO 13849-1:2015\\
+Validation DS/EN ISO 13849-2:2014
+
+\item \textbf{Requirements for wireless control systems of machinery}\\
+The robot are to be designed in correlation with DS/EN 62745:2017, which describes communication between portable operator control stations and the robot
+
+\item \textbf{Coordinate and motion nomenclatures}\\
+Movement in an coordinate system based map should be standardized\\
+in correlation to DS/ISO 9787
+
+\item \textbf{Collaborative robots (Collision detection)}\\
+The robot should be tested in regard to the limiting values of collision detection described in DS/ISO/TS 15066
+
+\item \textbf{Risk assessment}\\
+A risk assessment should be performed to ensure a decrease of potential security risks in regards to DS/EN ISO 12100:2011
+\end{itemize}
+
+\newpage
 
 \newgeometry{left=0.2cm,right=0.2cm}
 \begin{center}
-\begin{longtable}{| c | L{4cm} | L{6cm} | L{4cm} |}
+\begin{longtable}{| c | L{5cm} | L{6cm} | L{5cm} |}
 \caption{Requirements} \label{tab:long} \\
 \hline \multicolumn{1}{|c|}{\textbf{\#}} & \multicolumn{1}{c|}{\textbf{Name}} & \multicolumn{1}{c|}{\textbf{Description}} & \multicolumn{1}{c|}{\textbf{Testing section}}\\ \hline 
 \endfirsthead
 
 \multicolumn{3}{c}%
 {{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
-\hline \multicolumn{1}{|c|}{\textbf{\#}} & \multicolumn{1}{c|}{\textbf{Second column}} & \multicolumn{1}{c|}{\textbf{Third column}} & \multicolumn{1}{c|}{\textbf{Fourth column}}\\ \hline 
+\hline \multicolumn{1}{|c|}{\textbf{\#}} & \multicolumn{1}{c|}{\textbf{Name}} & \multicolumn{1}{c|}{\textbf{Description}} & \multicolumn{1}{c|}{\textbf{Testing section}}\\ \hline 
 \endhead
 
 \hline \multicolumn{4}{|r|}{{Continued on next page}} \\ \hline
@@ -17,93 +54,66 @@
 \hline \hline
 \endlastfoot
 
-1\label{req8.1} & Mapping & The robot should be able to map the surrounding environment to a .pgm image file with corresponding .yaml definition file & Section(x.x) \\
+1\label{req8.1} 
+& Start/stop
+& The robot should perform primary objectives autonomously, but report to an operator when errors occur, at any point the operator should be able to start, stop and take manual control of the operation.
+& Section(x.x) \\
 \hline
-3 & Map Structure & The robot should be able to divide a given environment map into a grid with a width of 350mm, for the purpose of plotting a search route & Section(x.x)\\
+2
+& Mapping 
+& The robot should be able to map the surrounding environment to a .pgm image file with corresponding .yaml definition file.
+& Section(x.x) \\
 \hline
-2 & Navigation & The robot should be able to navigate autonomously through a variety of terrains in Afghanistan, using the .yaml environment map & Section(x.x) \\ 
+3 
+& Map Structure 
+& The robot should be able to divide a given environment map into a grid with a width of 350mm, for the purpose of plotting a search route.
+& Section(x.x) \\
+\hline
+4 & Navigation 
+& The robot should be able to navigate autonomously through a variety of terrains in Afghanistan, using the .yaml environment map.
+& Section(x.x) \\ 
 \hline 
-4 & Obstacle avoidance & The robot should be able to detect obstacles in its current path, thus interrupt the current path and calculate a new path, furthermore the robot should avoid previous located mines \label{req.4} & Section(x.x) \\
+5 
+& Edge detection
+& The robot should be able to detect shifts in the terrain to avoid falling down a steep hill or down a cliff.
+& Section(x.x) \\
 \hline
-5 & Mine detection & The robot should be able to detect mines made of metal and/or other materials such as plastic or glass, furthermore it should be able to approximate which type of mine it has located. & Section(x.x) \\
+6
+& Obstacle avoidance
+& The robot should be able to detect obstacles in its current path, thus interrupt the current path and calculate a new path, furthermore the robot should avoid previous located mines \label{req.4}.
+& Section(x.x) \\
 \hline
-6 & Mine triggering & The robot should not exceed a weight of $\sim$6kg to ensure that it does not trigger landmines when approximating these. & Section(x.x) \\
+7 
+& Mine triggering 
+& The robot should not exceed a weight of $\sim$6kg to ensure that it does not trigger landmines when approximating these. 
+& Section(x.x) \\
 \hline
-7 & Runtime & The robot should have $\sim$8 hours runtime, furthermore the robot should be able to plan a route to the charging station autonomously (with respect to table \ref{req8.1} - \#4), to supplement a lower capacity battery & Section(x.x) \\
+8 
+& Mine detection 
+& The robot should be able to detect mines made of metal and/or other materials such as plastic or glass - in or above the ground, furthermore it should be able to approximate which type of mine it has located with.
+& Section(x.x) \\
 \hline
-8 & abcdef ghjijklmn & 123.456778 & 8888 \\
-9 & abcdef ghjijklmn & 123.456778 & 8888 \\
-10 & abcdef ghjijklmn & 123.456778 & 8888 \\
-11 & abcdef ghjijklmn & 123.456778 & 8888 \\
-12 & abcdef ghjijklmn & 123.456778 & 8888 \\
-13 & abcdef ghjijklmn & 123.456778 & 8888 \\
-14 & abcdef ghjijklmn & 123.456778 & 8888 \\
-15 & abcdef ghjijklmn & 123.456778 & 8888 \\
-16 & abcdef ghjijklmn & 123.456778 & 8888 \\
-17 & abcdef ghjijklmn & 123.456778 & 8888 \\
-18 & abcdef ghjijklmn & 123.456778 & 8888 \\
-19 & abcdef ghjijklmn & 123.456778 & 8888 \\
-20 & abcdef ghjijklmn & 123.456778 & 8888 \\
-T & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
-One & abcdef ghjijklmn & 123.456778 & 8888 \\
+9
+& Mine flagging 
+& The robot should be able to flag a found mine (with respect to table \ref{req8.1} - \#5), both in a virtual map and with a physical interaction eg. Spray paint \textit{(Red: \gls{ap}, Blue: \gls{at})}.
+& Section(x.x) \\
+\hline
+10 
+& Runtime 
+& The robot should have $\sim$8 hours runtime, furthermore the robot should be able to plan a route to the charging station autonomously (with respect to table \ref{req8.1} - \#4), to supplement a lower capacity battery. 
+& Section(x.x) \\
+\hline
+11 
+&  Enclosure class
+\par
+(DS/EN 60529+A1:2002
+& The robot must be resistant to the environment with an enclosure class of at least IP-64, thus it would be completely resistant to dust and protected from water splashing from any direction. 
+& Section(x.x) \\
+\hline
+12 
+&  Safety of machinery
+& To accommodate the Machine Directive 2006/42/EC, which is required for the robot to be CE marked, the robot should be designed with (section\ref{safety_of_machinery}) in mind.
+& Section (x.x) \\
 \end{longtable}
 \end{center}
 \restoregeometry
