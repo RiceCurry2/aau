@@ -17,16 +17,20 @@
 \hline \hline
 \endlastfoot
 
-1 & Mapping & The robot should be able to map the surrounding environment to a .pgm image file with corresponding .yaml definition file & Section(x.x) \\
+1\label{req8.1} & Mapping & The robot should be able to map the surrounding environment to a .pgm image file with corresponding .yaml definition file & Section(x.x) \\
 \hline
-3 & Map Structure & The robot should be able to divide a given environment map into a grid with a width of 350mm, for the purpose of plotting a search route & section(x.x)\\
+3 & Map Structure & The robot should be able to divide a given environment map into a grid with a width of 350mm, for the purpose of plotting a search route & Section(x.x)\\
 \hline
 2 & Navigation & The robot should be able to navigate autonomously through a variety of terrains in Afghanistan, using the .yaml environment map & Section(x.x) \\ 
 \hline 
-4 & Obstacle avoidance & 123.456778 & 8888 \\
-5 & abcdef ghjijklmn & 123.456778 & 8888 \\
-6 & abcdef ghjijklmn & 123.456778 & 8888 \\
-7 & abcdef ghjijklmn & 123.456778 & 8888 \\
+4 & Obstacle avoidance & The robot should be able to detect obstacles in its current path, thus interrupt the current path and calculate a new path, furthermore the robot should avoid previous located mines \label{req.4} & Section(x.x) \\
+\hline
+5 & Mine detection & The robot should be able to detect mines made of metal and/or other materials such as plastic or glass, furthermore it should be able to approximate which type of mine it has located. & Section(x.x) \\
+\hline
+6 & Mine triggering & The robot should not exceed a weight of $\sim$6kg to ensure that it does not trigger landmines when approximating these. & Section(x.x) \\
+\hline
+7 & Runtime & The robot should have $\sim$8 hours runtime, furthermore the robot should be able to plan a route to the charging station autonomously (with respect to table \ref{req8.1} - \#4), to supplement a lower capacity battery & Section(x.x) \\
+\hline
 8 & abcdef ghjijklmn & 123.456778 & 8888 \\
 9 & abcdef ghjijklmn & 123.456778 & 8888 \\
 10 & abcdef ghjijklmn & 123.456778 & 8888 \\
