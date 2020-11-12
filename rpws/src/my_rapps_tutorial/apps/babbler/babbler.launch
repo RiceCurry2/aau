@@ -1,0 +1,30 @@
+<launch>
+  <!--
+    Rapp launchers have nothing special that would otherwise indicate they are
+    'rapps', or even entities that are capable of being multi-mastered.
+  -->
+  <!--
+    Args are the means the app manager passes in parameters to rapps.
+    Think of them as the 'public parameters' of a rapp.
+
+    Typically for any launcher there are only a couple of variables that
+    the user really wants to tweak. This is generally a good practice when
+    designing launchers anyway. If there are really alot, think of passing
+    in an arg pointing to a custom yaml configuration file.
+
+    Make sure these args and their defaults are reflected in the public
+    parameters file (babbler.parameters). When launching from inside the
+    app manager, the public parameters override what's here, but the settings
+    here are useful if you ever choose to do testing with this launch file
+    on its own.
+  -->
+  <arg name="message" default="hello world" doc="hello world string"/>
+  <arg name="frequency" default="10" doc="frequency of publishing in Hz"/>
+  <!-- This is not the only way to do remapping, but it does provide flexibility -->
+  <arg name="topic_name" default="babbler" doc="remap the topic name by parameter"/>
+  <node name="babbler" pkg="my_rapps_tutorial" type="babbler.py" required="true">
+    <param name="topic_name" value="$(arg topic_name)"/>
+    <param name="message" value="$(arg message)"/>
+    <param name="frequency" value="$(arg frequency)"/>
+  </node>
+</launch>

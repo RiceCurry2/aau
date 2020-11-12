@@ -1,0 +1,26 @@
+#
+# This is the file that binds it all together along with some extra meta-information.
+# Note, any links here are relative to this file.
+#
+# Display name for guis when displaying this rapp amongst others.
+display: Babbler
+# Human readable description of the rapp.
+description: Turtlebot babbler tutorial.
+# The compatibility flag classifies how portable a rapp can be. 
+#
+# If a rapp is loaded into an app manager with an compatible rocon uri, then it will
+# reject the app (e.g. you put an indigo rapp on a hydro app manager, or a turtlebot
+# specific rapp on a pr2). 
+#
+# This is only really important if you're sharing your rapps around many robots.
+# If you're just testing a rapp on a single robot, having the default `rocon:/` setting
+# makes it promiscuous. See http://docs.ros.org/indigo/api/rocon_uri/html/ for
+# more information on rocon_uri rules.
+# 
+compatibility: rocon:/
+launch: babbler.launch
+public_interface: babbler.interface
+public_parameters: babbler.parameters
+# If you drop an icon here it will use that,
+# otherwise it will use a default icon
+icon: babbler.png

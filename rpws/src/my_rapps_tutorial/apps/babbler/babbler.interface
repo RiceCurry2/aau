@@ -1,0 +1,13 @@
+# these highlight the public interfaces of the rapp - useful for idl introspection, but
+# also enable the rapp for multimaster purposes should you so wish (these 
+# topics/services/actions automatically get flipped across to a connected master
+# when the rapp starts
+#
+publishers: 
+  - name: babbler
+    type: std_msgs/String
+# not necessary to add if empty, but for sake of completeness
+subscribers: []
+services: []
+action_clients: []
+action_servers: []

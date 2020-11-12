@@ -1,0 +1,5 @@
+my_rapps_tutorial
+/home/kuru/aau/rpws/devel/.private/my_rapps_tutorial/cmake.lock /home/kuru/aau/rpws/devel/./cmake.lock
+/home/kuru/aau/rpws/devel/.private/my_rapps_tutorial/lib/pkgconfig/my_rapps_tutorial.pc /home/kuru/aau/rpws/devel/lib/pkgconfig/my_rapps_tutorial.pc
+/home/kuru/aau/rpws/devel/.private/my_rapps_tutorial/share/my_rapps_tutorial/cmake/my_rapps_tutorialConfig-version.cmake /home/kuru/aau/rpws/devel/share/my_rapps_tutorial/cmake/my_rapps_tutorialConfig-version.cmake
+/home/kuru/aau/rpws/devel/.private/my_rapps_tutorial/share/my_rapps_tutorial/cmake/my_rapps_tutorialConfig.cmake /home/kuru/aau/rpws/devel/share/my_rapps_tutorial/cmake/my_rapps_tutorialConfig.cmake
