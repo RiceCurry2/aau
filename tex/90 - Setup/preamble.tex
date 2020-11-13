@@ -59,7 +59,7 @@
 % ------ Indholdsfortegnelse (Table of contents (TOC)) ------
 \usepackage{tocloft}
 \setcounter{secnumdepth}{3} % jo højere tallet er, jo "dybere" overskrifter bliver nummereret. 3 giver Chapter, section, subsection og subsubsection
-\setcounter{tocdepth}{1} % dybden af indholdfortegnelsen. 1 viser chapter og section
+\setcounter{tocdepth}{2} % dybden af indholdfortegnelsen. 1 viser chapter, section og sub
 % \renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}} % prikker for parts
 % \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % prikker for chapters
 % \renewcommand{\cftsecleader}{\hfill} % fjern prikker for sections
@@ -157,4 +157,24 @@
 % \setlength{\arrayrulewidth}{0.3mm}
 \renewcommand{\arraystretch}{1.5}
 
+\usepackage{makecell}
 
+\lstset{ 
+    language=bash, % choose the language of the code
+    basicstyle=\fontfamily{pcr}\selectfont\footnotesize\color{black},
+    keywordstyle=\color{black}\bfseries, % style for keywords
+    numbers=none, % where to put the line-numbers
+    numberstyle=\tiny, % the size of the fonts that are used for the line-numbers     
+    showspaces=false, % show spaces adding particular underscores
+    showstringspaces=false, % underline spaces within strings
+    showtabs=false, % show tabs within strings adding particular underscores
+    frame=single, % adds a frame around the code
+    tabsize=2, % sets default tabsize to 2 spaces
+    rulesepcolor=\color{gray},
+    rulecolor=\color{black},
+    captionpos=b, % sets the caption-position to bottom
+    breaklines=true, % sets automatic line breaking
+    breakatwhitespace=false, 
+    emph={rosrun,int,char,double,float,unsigned,void,bool},
+    emphstyle={\color{blue!50}},
+}
