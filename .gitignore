@@ -364,3 +364,4 @@ qtcreator-*
 CATKIN_IGNORE
 tex/P1 RC 2.0.pdf
 tex/.vscode/settings.json
+.vscode/settings.json
