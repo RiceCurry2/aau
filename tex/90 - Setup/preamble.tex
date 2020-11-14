@@ -156,9 +156,15 @@
 % \setlength\extrarowheight{0pt}
 % \setlength{\arrayrulewidth}{0.3mm}
 \renewcommand{\arraystretch}{1.5}
-
 \usepackage{makecell}
+\usepackage{mwe}
 
+
+% ------ Strike through text --------
+\usepackage{soul}
+
+
+%------- Bash color coding ----------
 \lstset{ 
     language=bash, % choose the language of the code
     basicstyle=\fontfamily{pcr}\selectfont\footnotesize\color{black},
@@ -177,4 +183,16 @@
     breakatwhitespace=false, 
     emph={rosrun,int,char,double,float,unsigned,void,bool},
     emphstyle={\color{blue!50}},
+}
+
+%---------- Ditto mark---------
+
+\usepackage{tikz}
+\newcommand{\dittotikz}{%
+    \tikz{
+        \draw [line width=0.12ex] (-0.2ex,0) -- +(0,0.8ex)
+            (0.2ex,0) -- +(0,0.8ex);
+        \draw [line width=0.08ex] (-0.6ex,0.4ex) -- +(-1.5em,0)
+            (0.6ex,0.4ex) -- +(1.5em,0);
+    }%
 }

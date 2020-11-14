@@ -65,7 +65,7 @@ How can we make the Turtlebot 2, act as proof of concept for the part of our fin
   \\
   \hline
   4 & Navigation 
-  & The robot should be able to navigate autonomously through a variety of terrains in Afghanistan, using the .yaml environment map.
+  & The robot should be able to navigate autonomously \st{through a variety of terrains in Afghanistan}\footnote{Delimitation: At this point it is not possible to test the prototype robot in various terrain of Afhghanistan.\\}, using the .yaml environment map.
   & Section \ref{T4}
   \\ 
   \hline 
@@ -81,39 +81,40 @@ How can we make the Turtlebot 2, act as proof of concept for the part of our fin
   & Section \ref{T6}
   \\
   \hline
-  7 
+  ND 
   & Mine Triggering 
-  & The robot should not exceed a weight of $\sim$6kg to ensure that it does not trigger landmines when approximating these. 
+  & \st{The robot should not exceed a weight of $\sim$6kg to ensure that it does not trigger landmines when approximating these.}\footnote{Ruled out:, At this point it is not possible to test the final weight - Due to the fact, that it is not the final robot.}
+  & Ruled out
+  \\
+  \hline
+  7 
+  & Mine Detection 
+  & The robot should be able to detect \st{mines} objects made of metal \st{and/or other materials such as plastic or glass} - in \st{or above the ground}\footnote{Delimitation: The prototype robot will not be able to find mines made of metal, plastic or glass. It is only mounted with a prototype metal detector, which can detect metal objects on the ground to act as a proof of concept.\\}, furthermore it should be able to approximate which type of mine it has located.
   & Section \ref{T7}
   \\
   \hline
-  8 
-  & Mine Detection 
-  & The robot should be able to detect mines made of metal and/or other materials such as plastic or glass - in or above the ground, furthermore it should be able to approximate which type of mine it has located with.
+  8
+  & Mine Flagging 
+  & The robot should be able to flag a found mine (with respect to table \ref{req8.1-p} - \#5), both in a virtual map and with a physical interaction eg. Spray paint \textit{(Red: \gls{ap}, Blue: \gls{at})}.
   & Section \ref{T8}
   \\
   \hline
-  9
-  & Mine Flagging 
-  & The robot should be able to flag a found mine (with respect to table \ref{req8.1-p} - \#5), both in a virtual map and with a physical interaction eg. Spray paint \textit{(Red: \gls{ap}, Blue: \gls{at})}.
+  9 
+  & Runtime 
+  & The robot should have $\sim$8 hours runtime, furthermore the robot should be able to plan a route to the charging station autonomously (with respect to table \ref{req8.1-p} - \#4), to supplement a lower capacity battery. 
   & Section \ref{T9}
   \\
   \hline
-  10 
-  & Runtime 
-  & The robot should have $\sim$8 hours runtime, furthermore the robot should be able to plan a route to the charging station autonomously (with respect to table \ref{req8.1-p} - \#4), to supplement a lower capacity battery. 
-  & Section \ref{T10}
-  \\
-  \hline
-  11 
+  ND
   &  Enclosure Class
   \par
   (DS/EN 60529+A1:2002
-  & The robot must be resistant to the environment with an enclosure class of at least IP-64, thus it would be completely resistant to dust and protected from water splashing from any direction. 
-  & Section \ref{T11}
+  & \st{The robot must be resistant to the environment with an enclosure class of at least IP-64, thus it would be completely resistant to dust and protected from water splashing from any direction.}\footnote{Ruled out: At this stage it is not possible to test enclosure classes on the prototype robot.}
+  & Ruled out
   \\
   \hline
   \end{longtable}
   \end{center}
   \restoregeometry
+  
   
