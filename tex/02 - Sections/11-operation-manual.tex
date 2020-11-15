@@ -1,15 +1,17 @@
 \chapter{Operation Manual}
 
+\todo{Very much work in progress - add to this section while programming packages}
+
 This chapter will contain basic knowledge needed to function as a basic operator of the demining robot, before the operator can use the prototype basis for the demining robot it is important that the operator understand basic concepts regarding Linux and ROS, thus a list of steps has been reproduced to receive error codes, start, stop and obtain manual control of the operation.
 
 \begin{enumerate}
     \item Turn on the robot and operating PC and wait approximately 5 minutes.
     \item SSH into the robot controller
-    \item Launch gmapping\_demo and frontier\_exploration with following command:\\
+    \item Launch gmapping\_demo and fe with following command:\\
         \begin{lstlisting}[language=bash,numbers=none]
   >  rosrun/launch testing_this coding_input_function
         \end{lstlisting}
-    \item Define a suitable path for frontier\_exploration
+    \item Define a suitable path for fe
     \item Launch the "demining" package trough SSH on turtlebot with following command:\\
         \begin{lstlisting}[language=bash,numbers=none]
   >  rosrun it_works like_a_charm
