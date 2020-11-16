@@ -45,9 +45,11 @@
 
 % ------ Referencer ------
 % Biblatex cheat sheet: http://tug.ctan.org/info/biblatex-cheatsheet/biblatex-cheatsheet.pdf
-\usepackage[style=numeric, sorting=none]{biblatex}
+\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
 \appto{\bibsetup}{\raggedright}
 \addbibresource{referencer.bib} % fortæller hvad vores reference bibliotek hedder og hvor det er at finde i mappestrukturen
+
+
 %\DeclareFieldFormat{postnote}{s. #1} % ændrer "page" til "s." i kilder ved enkelte sider
 %\DeclareFieldFormat{multipostnote}{s. #1} % ændrer "pages" til "s." i kilder ved interval af sider
 
