@@ -85,21 +85,6 @@ A fully operator-controlled robot can have a simple design. But these robots req
 
 Moving up the categories to more autonomous solutions, would, of course, be a more ideal solution because this would decrease human error and the human risk factor, i.e. operator will not be close to a possible explosion. However, this, as with anything else, comes with higher expenses and without further improvements on the robots, to lower the expenses it could be difficult to make them it more affordable \cite{6LeggedRobot2007}. Although we assess that a fully autonomous solution will be cheaper in the long run, based on operating expenses. Therefore, we prefer a fully autonomous solution.
 
-\subsection{Sensors}
-
-We already provided information on less advanced methods for mine detection, see ‘Primitive demining methods’, however more advanced technology such as the use of detection sensors could provide a safer alternative. These sensors can be divided into the following groups \cite{HumanitarianDemining2017}:
-\begin{itemize}
-\setlength{\itemsep}{0.05\baselineskip}
-	\item Explosive detectors
-	\item Electromagnetic sensors
-	\item Electro-optic sensors
-\end{itemize}
-
-Explosive detectors are used to detect the explosive material of a mine. Electromagnetic sensors, such as metal detectors (MD), which are used to measure magnetized metals, or ground penetrating radar (GPR), which can identify plastic. An electro-optic sensor such as an infrared sensor (IR), uses light waves to measure the distance to some objects in the soil. All these could potentially be used to locate mines \cite{HumanitarianDemining2017}.
-
-Limitations on these sensors do exist, which is why a combination of multiple sensors might be the best option for a mine detection robot. For instance, an electro-optic sensor such as an infrared sensor cannot be used to centre specific mines. This means they are only capable of scanning an area. Ground-penetrating radar is relying on the ground condition to determine the depth of its ground penetration but can however detect other materials than metal beneath the ground. Metal detectors might be cheap and reliable but can, as the name implies, only detect metal \cite{HumanitarianDemining2017}.
-So in general, making a robot effective, means using a few different sensors and detectors to cover the limitations of the single one \cite{6LeggedRobot2007}.
-
 \subsection{Current Humanitarian Demining Robots}
 
 Since humanitarian demining still heavily relies on dangerous primitive techniques, a lot of re-search is being done with the intent of creating a viable robot to be used in humanitarian demining. Figure \ref{fig:field_robots_for_humanitarian_demining_2014} shows a table, which is taken from \cite{FieldRobots2014}. It presents six modern-day field robots with different specifications, all of which have been presented as a possible solution to the demining problem \cite{FieldRobots2014}.
@@ -109,7 +94,7 @@ Since humanitarian demining still heavily relies on dangerous primitive techniqu
       \includegraphics[width=1\textwidth]{00 - Images/field_robots_for_humanitarian_demining_2014.png}
   \caption{Deploying field robots for humanitarian demining: Challenges, requirements, and research trends, 2014 \cite{FieldRobots2014}}
   \label{fig:field_robots_for_humanitarian_demining_2014}
-\end{figure} \todo{This cut out table is quite crap, we should make something thats relevant for this project \#notflaming}
+\end{figure} \todo{This cut out table is quite crap, we should make something that's relevant for this project \#notflaming}
 
 As seen in Figure \ref{fig:field_robots_for_humanitarian_demining_2014} these demining robots vary a lot in terms of design, cost, size, sensor technology, and operation time. Some are made with the intent of removing mines and some only to locate them \cite{FieldRobots2014}. We will only specify robots used for detecting mines. The robots have different qualities which makes them relevant in the specific context they were built to handle. For example, the ARES robot in Figure \ref{fig:field_robots_for_humanitarian_demining_2014} might be relatively lightweight (80 kg) and cheap ($\ge$ 7.500€) but are only capable of detecting the explosive TNT.\\
 
@@ -126,7 +111,6 @@ Following this is a presentation of some current demining robots. These are chos
   \label{fig:autonomous_ground_vehicle_for_landmine_clearance}
 \end{wrapfigure}
 This is a newly developed mine detection and clearing robot, which uses metal detector sensors to detect mines and could be fitted with a powerful torch that can incinerate mines. We selected this robot because of its ability to collaborate between multiple robots of the same type and the ability to visualize cleared areas. The robot, which is said to approximately be the size of a golf cart, is developed by CSIRO, Data61, and Molten Labs. The robot is fully autonomous and is intended to work together with multiple robots of the same kind. These robots can attach to each other, which also makes them able to drag a malfunctioned robot out of the contaminated area. Furthermore, it allows for quicker mine-clearing when multiple robots are working together. This robot uses a spray-painting system to physically mark the ground that visually shows the areas which have been cleared of mines \cite{CSIRO2020}. It however is a big machine and it could be a troublesome endeavor to deploy multiple robots in a remote area.
-
 
 \subsubsection*{HUMI}
 
