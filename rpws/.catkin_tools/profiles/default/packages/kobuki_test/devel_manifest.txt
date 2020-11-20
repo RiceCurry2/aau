@@ -1,0 +1,6 @@
+kobuki_test
+/home/kuru/aau/rpws/devel/.private/kobuki_test/cmake.lock /home/kuru/aau/rpws/devel/./cmake.lock
+/home/kuru/aau/rpws/devel/.private/kobuki_test/lib/pkgconfig/kobuki_test.pc /home/kuru/aau/rpws/devel/lib/pkgconfig/kobuki_test.pc
+/home/kuru/aau/rpws/devel/.private/kobuki_test/lib/kobuki_test/kobuki_test_node /home/kuru/aau/rpws/devel/lib/kobuki_test/kobuki_test_node
+/home/kuru/aau/rpws/devel/.private/kobuki_test/share/kobuki_test/cmake/kobuki_testConfig-version.cmake /home/kuru/aau/rpws/devel/share/kobuki_test/cmake/kobuki_testConfig-version.cmake
+/home/kuru/aau/rpws/devel/.private/kobuki_test/share/kobuki_test/cmake/kobuki_testConfig.cmake /home/kuru/aau/rpws/devel/share/kobuki_test/cmake/kobuki_testConfig.cmake
