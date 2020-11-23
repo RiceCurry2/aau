@@ -1,0 +1,6 @@
+project_ros
+/home/kuru/aau/rpws/devel/.private/project_ros/cmake.lock /home/kuru/aau/rpws/devel/./cmake.lock
+/home/kuru/aau/rpws/devel/.private/project_ros/lib/project_ros/project_ros /home/kuru/aau/rpws/devel/lib/project_ros/project_ros
+/home/kuru/aau/rpws/devel/.private/project_ros/lib/pkgconfig/project_ros.pc /home/kuru/aau/rpws/devel/lib/pkgconfig/project_ros.pc
+/home/kuru/aau/rpws/devel/.private/project_ros/share/project_ros/cmake/project_rosConfig-version.cmake /home/kuru/aau/rpws/devel/share/project_ros/cmake/project_rosConfig-version.cmake
+/home/kuru/aau/rpws/devel/.private/project_ros/share/project_ros/cmake/project_rosConfig.cmake /home/kuru/aau/rpws/devel/share/project_ros/cmake/project_rosConfig.cmake

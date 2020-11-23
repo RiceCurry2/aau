@@ -1,8 +1,0 @@
-turtlesim_games
-/home/kuru/aau/rpws/devel/.private/turtlesim_games/cmake.lock /home/kuru/aau/rpws/devel/./cmake.lock
-/home/kuru/aau/rpws/devel/.private/turtlesim_games/lib/turtlesim_games/kill_turtles /home/kuru/aau/rpws/devel/lib/turtlesim_games/kill_turtles
-/home/kuru/aau/rpws/devel/.private/turtlesim_games/lib/turtlesim_games/vacuum /home/kuru/aau/rpws/devel/lib/turtlesim_games/vacuum
-/home/kuru/aau/rpws/devel/.private/turtlesim_games/lib/turtlesim_games/make_box /home/kuru/aau/rpws/devel/lib/turtlesim_games/make_box
-/home/kuru/aau/rpws/devel/.private/turtlesim_games/lib/pkgconfig/turtlesim_games.pc /home/kuru/aau/rpws/devel/lib/pkgconfig/turtlesim_games.pc
-/home/kuru/aau/rpws/devel/.private/turtlesim_games/share/turtlesim_games/cmake/turtlesim_gamesConfig-version.cmake /home/kuru/aau/rpws/devel/share/turtlesim_games/cmake/turtlesim_gamesConfig-version.cmake
-/home/kuru/aau/rpws/devel/.private/turtlesim_games/share/turtlesim_games/cmake/turtlesim_gamesConfig.cmake /home/kuru/aau/rpws/devel/share/turtlesim_games/cmake/turtlesim_gamesConfig.cmake
