@@ -28,8 +28,8 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 
 add_executable(${PROJECT_NAME}
 src/main.cpp
-src/ProjectRosTestSubscriber.cpp
-src/ProjectRosMovement.cpp)
+src/PRTestSubscriber.cpp
+src/PRMovement.cpp)
 
 
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
