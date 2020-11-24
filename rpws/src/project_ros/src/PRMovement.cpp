@@ -2,7 +2,6 @@
 
 namespace pr_movement{
 
-
 PRMovement::PRMovement(ros::NodeHandle& nodeHandle)
     :nodeHandle_(nodeHandle)
     {
@@ -23,16 +22,12 @@ bool PRMovement::readParameters(){
 
 void PRMovement::GoForward()
 {
-
     geometry_msgs::Twist base_cmd;
     base_cmd.linear.x = -1.0;
-
-    while(ros::ok())
-    {
+    
+    while(ros::ok()){
     publisher_.publish(base_cmd);
-    
-    
-    }
+    }    
 }
 
 void PRMovement::topicCallback(const std_msgs::String& message)

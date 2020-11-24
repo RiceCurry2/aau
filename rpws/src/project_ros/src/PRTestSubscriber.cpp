@@ -12,9 +12,13 @@ PRTestSubscriber::PRTestSubscriber(ros::NodeHandle& nodeHandle)
             ROS_ERROR("Could not read parameters.");
             ros::requestShutdown();
         }*/
-        subscriber_ = nodeHandle_.subscribe(subscriberTopic_, 1,
+        subscriber_ = nodeHandle_.subscribe(subscriberTopic_, 10,
                                     &PRTestSubscriber::topicCallback, this);
         ROS_INFO("Sucessfully launched node.");
+
+        //while(ros::ok()){
+        ros::spin();
+        //}
     }
 
 bool PRTestSubscriber::readParameters(){

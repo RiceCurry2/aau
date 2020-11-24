@@ -12,7 +12,7 @@ class PRMovement
     public:
 
     PRMovement(ros::NodeHandle& nodeHandle);
-
+    
     virtual ~PRMovement()
     { };
 
@@ -24,6 +24,8 @@ class PRMovement
     void GoForward();
 
     void PrintToScreen();
+
+    PRMovement& movement_;
 
     //! ROS node handle.
     ros::NodeHandle& nodeHandle_;
