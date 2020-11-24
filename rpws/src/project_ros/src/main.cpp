@@ -13,11 +13,6 @@ int main(int argc, char** argv)
         pr_movement::PRMovement pRMovement(nodeHandle);
     });
 
-<<<<<<< Updated upstream
-    //pr_movement::PRMovement pRMovement();
-
-    pr_test_subscriber::PRTestSubscriber pRTestSubscriber(nodeHandle);
-=======
     std::thread t2([&]{
         pr_test_subscriber::PRTestSubscriber pRTestSubscriber(nodeHandle);
     });
@@ -26,7 +21,6 @@ int main(int argc, char** argv)
     t2.join();
     
     //ros::spin();
->>>>>>> Stashed changes
     
     return 0;
 }

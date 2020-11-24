@@ -2,6 +2,8 @@
 
 #include <ros/ros.h>
 #include <iostream>
+#include <geometry_msgs/Twist.h>
+#include <std_msgs/String.h>
 
 namespace pr_movement {
 
@@ -9,25 +11,21 @@ class PRMovement
 {
     public:
 
-<<<<<<< Updated upstream
-    PRMovement();
-=======
     PRMovement(ros::NodeHandle& nodeHandle);
     
->>>>>>> Stashed changes
-
     virtual ~PRMovement()
     { };
 
     private:
 
+    bool readParameters();
+    void topicCallback(const std_msgs::String& message);
+
+    void GoForward();
+
     void PrintToScreen();
 
-<<<<<<< Updated upstream
     PRMovement& movement_;
-=======
-    //int& argc_;
-    //char**& argv_;
 
     //! ROS node handle.
     ros::NodeHandle& nodeHandle_;
@@ -40,8 +38,9 @@ class PRMovement
 
     //! ROS topic name to publish to.
     std::string publisherTopic_ = "/mobile_base/commands/velocity";
->>>>>>> Stashed changes
 
+    //! ROS topic name to subscribe to.
+    std::string subscriberTopic_ = "Kjartan";
 };
 
 }   /*namespace*/

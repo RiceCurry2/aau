@@ -2,10 +2,6 @@
 
 namespace pr_movement{
 
-<<<<<<< Updated upstream
-/*
-PRMovement::PRMovement()
-=======
 PRMovement::PRMovement(ros::NodeHandle& nodeHandle)
     :nodeHandle_(nodeHandle)
     {
@@ -26,7 +22,6 @@ bool PRMovement::readParameters(){
 
 void PRMovement::GoForward()
 {
-
     geometry_msgs::Twist base_cmd;
     base_cmd.linear.x = -1.0;
     
@@ -36,15 +31,13 @@ void PRMovement::GoForward()
 }
 
 void PRMovement::topicCallback(const std_msgs::String& message)
->>>>>>> Stashed changes
 {
- 
+    ROS_INFO_STREAM("Yesh " << message.data);
 }
 
 void PRMovement::PrintToScreen(){
     std::cout << "Hey hey";
 }
-*/
 
 }   /*namespace*/
 
