@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 /home/kuru/aau/rpws/devel/./cmake.lock 103
+=======
+/home/kuru/aau/rpws/devel/./cmake.lock 145
+>>>>>>> Stashed changes
