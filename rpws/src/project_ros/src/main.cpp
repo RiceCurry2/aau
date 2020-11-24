@@ -7,7 +7,7 @@ int main(int argc, char** argv)
     ros::init(argc, argv, "main");
     ros::NodeHandle nodeHandle("~");
 
-    //pr_movement::PRMovement pRMovement();
+    pr_movement::PRMovement pRMovement(nodeHandle);
 
     pr_test_subscriber::PRTestSubscriber pRTestSubscriber(nodeHandle);
     
