@@ -25,8 +25,6 @@ class PRMovement
 
     void PrintToScreen();
 
-    PRMovement& movement_;
-
     //! ROS node handle.
     ros::NodeHandle& nodeHandle_;
 
