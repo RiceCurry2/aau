@@ -3,15 +3,15 @@
 #include <ros/ros.h>
 #include <std_msgs/String.h>
 
-namespace project_ros_test_subscriber {
+namespace pr_test_subscriber {
 
-class ProjectRosTestSubscriber
+class PRTestSubscriber
 {
     public:
 
-    ProjectRosTestSubscriber(ros::NodeHandle& nodeHandle);
+    PRTestSubscriber(ros::NodeHandle& nodeHandle);
 
-    virtual ~ProjectRosTestSubscriber()
+    virtual ~PRTestSubscriber()
     { };
 
     private:
@@ -27,7 +27,7 @@ class ProjectRosTestSubscriber
     ros::Subscriber subscriber_;
 
     //! ROS topic name to subscribe to.
-    std::string subscriberTopic_;
+    std::string subscriberTopic_ = "Kjartan";
 };
 
 } /*namespace*/

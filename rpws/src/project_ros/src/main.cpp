@@ -1,15 +1,15 @@
 #include <ros/ros.h>
-#include "project_ros_test_subscriber/ProjectRosTestSubscriber.hpp"
-#include "project_ros_movement/ProjectRosMovement.hpp"
+#include "pr_test_subscriber/PRTestSubscriber.hpp"
+#include "pr_movement/PRMovement.hpp"
 
 int main(int argc, char** argv)
 {
     ros::init(argc, argv, "main");
     ros::NodeHandle nodeHandle("~");
 
-    project_ros_movement::ProjectRosMovement projectRosMovement;
-       
-    project_ros_test_subscriber::ProjectRosTestSubscriber projectRosTestSubscriber(nodeHandle);
+    //pr_movement::PRMovement pRMovement();
+
+    pr_test_subscriber::PRTestSubscriber pRTestSubscriber(nodeHandle);
     
     ros::spin();
     return 0;

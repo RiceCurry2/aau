@@ -3,20 +3,22 @@
 #include <ros/ros.h>
 #include <iostream>
 
-namespace project_ros_movement {
+namespace pr_movement {
 
-class ProjectRosMovement
+class PRMovement
 {
     public:
 
-    ProjectRosMovement();
+    PRMovement();
 
-    virtual ~ProjectRosMovement()
+    virtual ~PRMovement()
     { };
 
     private:
 
     void PrintToScreen();
+
+    PRMovement& movement_;
 
 };
 
