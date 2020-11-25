@@ -17,9 +17,10 @@ int main(int argc, char** argv)
     ros::init(argc, argv, "xCrushinator");
     ros::NodeHandle nodeHandle("~");
     
+    /*
     std::thread t2([&]{
         pr_movement::PRMovement pRMovement(nodeHandle);
-    });
+    });*/
 
     std::thread t3([&]{
         pr_test_subscriber::PRTestSubscriber pRTestSubscriber(nodeHandle);
@@ -29,11 +30,19 @@ int main(int argc, char** argv)
         pr_scan::PRScan pRScan(nodeHandle);
     });
     
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    
+    /*std::thread t5([&]{
+        system("roslaunch turtlebot_teleop keyboard_teleop.launch");
+    });*/
+
     t1.join();
-    t2.join();
+    //t2.join();
     t3.join();
     t4.join();
-    
+    //t5.join();
+
+
     //ros::spin();
     
     return 0;

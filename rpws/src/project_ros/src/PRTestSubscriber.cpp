@@ -18,9 +18,7 @@ PRTestSubscriber::PRTestSubscriber(ros::NodeHandle& nodeHandle)
 
         ros::MultiThreadedSpinner spinner(1);
 
-        //while(ros::ok()){
         spinner.spin();
-        //}
     }
 
 bool PRTestSubscriber::readParameters(){
