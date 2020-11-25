@@ -16,17 +16,23 @@ PRMovement::PRMovement(ros::NodeHandle& nodeHandle)
     }
 
 bool PRMovement::readParameters(){
-    if(!nodeHandle_.getParam("/mobile_base/commands/velocity", publisherTopic_)) return false;
-    return true;
+    if(!nodeHandle_.getParam("/mobile_base/commands/velocity", publisherTopic_)){
+        return false;
+    }
+    else{
+        return true;
+    }
 }
 
 void PRMovement::GoForward()
 {
     geometry_msgs::Twist base_cmd;
     base_cmd.linear.x = -1.0;
+    ros::Rate r(1); // 1 Hz (One message per second?)
     
     while(ros::ok()){
     publisher_.publish(base_cmd);
+    r.sleep();
     }    
 }
 

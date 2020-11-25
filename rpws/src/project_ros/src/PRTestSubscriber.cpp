@@ -16,8 +16,10 @@ PRTestSubscriber::PRTestSubscriber(ros::NodeHandle& nodeHandle)
                                     &PRTestSubscriber::topicCallback, this);
         ROS_INFO("Sucessfully launched node.");
 
+        ros::MultiThreadedSpinner spinner(1);
+
         //while(ros::ok()){
-        ros::spin();
+        spinner.spin();
         //}
     }
 
