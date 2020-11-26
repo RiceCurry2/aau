@@ -9,7 +9,8 @@
 int main(int argc, char** argv)
 {
     std::thread t1([&]{
-        system("roscore && cd ../ && source devel/setup.bash");
+        system("/usr/bin/terminator --new-tab -x bash -c roscore");
+        //system("/usr/bin/terminator --new-tab -x source devel/setup.bash");// --new-tab -x ");//;&& ");//  --window
     });
 
     std::this_thread::sleep_for(std::chrono::seconds(3));
@@ -32,9 +33,9 @@ int main(int argc, char** argv)
     
     std::this_thread::sleep_for(std::chrono::seconds(3));
     
-    /*std::thread t5([&]{
-        system("roslaunch turtlebot_teleop keyboard_teleop.launch");
-    });*/
+    std::thread t5([&]{
+        system("/usr/bin/terminator --new-tab -x roslaunch turtlebot_teleop keyboard_teleop.launch");
+    });
 
     t1.join();
     //t2.join();
