@@ -21,7 +21,7 @@ class PRScan
     ros::NodeHandle& nodeHandle_;
     ros::Subscriber subscriber_;
     std::string subscriberTopic_ = "/scan";
-
+    
     void topicCallback(const sensor_msgs::LaserScan::ConstPtr& msg);
 };
 
