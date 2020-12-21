@@ -12,19 +12,15 @@ namespace pr_scan{
         ros::MultiThreadedSpinner spinner(1);
 
         spinner.spin();
-        
     }
 
     void PRScan::topicCallback(const sensor_msgs::LaserScan::ConstPtr& msg)
     {
         float scanImage[640];
 
-        float xRight = msg->ranges.at(0);       // Furthes right scanner is capturing
+        float xRight = msg->ranges.at(0);       // Furthes right (45 degrees) scanner is capturing
         float xCenter = msg->ranges.at(319);    // Center
-        float xLeft = msg->ranges.at(639);      // Furthest left scanner is capturing
-
-        //float x = msgsensor_msgs::LaserScan range_data;
-        //scanImage[0] = range_data.ranges.at(1);
+        float xLeft = msg->ranges.at(639);      // Furthest left (-45 degrees) scanner is capturing
 
         ROS_INFO("Scan info: Left: %f, Center: %f Right: %f", xLeft, xCenter, xRight);//scanImage[0]);
     }

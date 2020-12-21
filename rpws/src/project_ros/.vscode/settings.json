@@ -58,7 +58,8 @@
         "utility": "cpp",
         "typeindex": "cpp",
         "typeinfo": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "string": "cpp"
     },
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
