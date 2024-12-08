@@ -5,6 +5,8 @@ add_compile_options(-std=c++11)
 
 find_package(catkin REQUIRED COMPONENTS
 roscpp
+sensor_msgs
+geometry_msgs
 )
 
 ###
@@ -17,6 +19,8 @@ catkin_package(
     #LIBRARIES
     CATKIN_DEPENDS
         roscpp
+        sensor_msgs
+        geometry_msgs
     #DEPENDS
 )
 
@@ -30,7 +34,12 @@ add_executable(${PROJECT_NAME}
 src/main.cpp
 src/PRTestSubscriber.cpp
 src/PRMovement.cpp
-src/PRScan.cpp)
+src/PRScan.cpp
+src/PRMap.cpp
+src/PRMapConvertion.cpp
+src/PRMapLocation.cpp
+src/Test.cpp
+)
 
 
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})

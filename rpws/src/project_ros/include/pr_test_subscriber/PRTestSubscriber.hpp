@@ -27,7 +27,7 @@ class PRTestSubscriber
     ros::Subscriber subscriber_;
 
     //! ROS topic name to subscribe to.
-    std::string subscriberTopic_ = "/Kjartan";
+    std::string subscriberTopic_;// = "/Kjartan";
 };
 
 } /*namespace*/
